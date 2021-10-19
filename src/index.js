@@ -49,22 +49,26 @@
 
 //mapやfilterをつかった処理
 
-// const nameArr = ["sato","yamada","tanaka"];
+const nameArr = ["sato", "yamada", "tanaka"];
 
 // for(let i = 0; i< nameArr.length; i++){
 //   console.log(nameArr[i]);
 // }
 
-// const nameMap = nameArr.map( (name) => {return name;});
+const nameMap = nameArr.map((name) => {
+  return name;
+});
 
-// console.log(nameMap);
+console.log(nameMap);
 
-// nameMap.filter((name) => {
-//   if(name == "yamada" ){
-//     console.log(name+" is called");
-//   }
-// })
+nameMap.filter((name) => {
+  if (name == "yamada") {
+    console.log(name + " is called");
+  }
+});
 
-// const check = (num1 = 0, num2 = 0) => {return num1 + num2 > 100 ? '100を超えてる' : '許可'}
+const check = (num1 = 0, num2 = 0) => {
+  return num1 + num2 > 100 ? "100を超えてる" : "許可";
+};
 
-// console.log(check(200));
+console.log(check(200));
